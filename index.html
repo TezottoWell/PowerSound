@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte - Power Sound</title>
+    <style>
+        :root {
+            --primary-color: #E53935;
+            --dark-bg: #121212;
+            --card-bg: #242424;
+            --surface: #1E1E1E;
+            --text: #FFFFFF;
+            --text-secondary: #CCCCCC;
+            --border: #333333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 1rem;
+        }
+        
+        .content {
+            padding: 2rem 0;
+        }
+        
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+        }
+        
+        .contact-item i {
+            margin-right: 0.5rem;
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background-color: var(--surface);
+            padding: 1rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+            color: var(--text-secondary);
+        }
+        
+        ul {
+            list-style-type: square;
+            color: var(--primary-color);
+        }
+        
+        ul li span {
+            color: var(--text);
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .feature-item {
+            background-color: var(--surface);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .feature-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>POWER SOUND</span>
+                </div>
+                <div>
+                    <p>Gestão de Serviços Automotivos</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container content">
+        <div class="card">
+            <h1>Central de Suporte</h1>
+            <p>Bem-vindo à página de suporte do aplicativo Power Sound. Aqui você encontrará informações sobre o aplicativo, recursos disponíveis e como obter ajuda.</p>
+            
+            <hr>
+            
+            <h2>Sobre o Aplicativo</h2>
+            <p>O Power Sound é um aplicativo de gestão desenvolvido exclusivamente para a oficina Power Sound, especializada em som automotivo e acessórios. O app facilita o gerenciamento de ordens de serviço, cadastro de peças e serviços, além da geração de documentos em PDF.</p>
+            
+            <h3>Principais Recursos</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-title"><i class="fas fa-clipboard-list"></i> Ordens de Serviço</div>
+                    <p>Crie, edite e gerencie ordens de serviço com informações de clientes, veículos e serviços realizados.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title"><i class="fas fa-tools"></i> Catálogo de Peças</div>
+                    <p>Mantenha um catálogo atualizado de peças disponíveis com preços e descrições.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title"><i class="fas fa-cogs"></i> Serviços Cadastrados</div>
+                    <p>Cadastre serviços padrão com descrições detalhadas e preços recomendados.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title"><i class="fas fa-file-pdf"></i> Documentos em PDF</div>
+                    <p>Gere orçamentos e comprovantes em PDF para compartilhamento com clientes.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title"><i class="fas fa-history"></i> Histórico de Serviços</div>
+                    <p>Consulte o histórico completo de serviços realizados por cliente ou veículo.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-title"><i class="fas fa-chart-line"></i> Gestão Financeira</div>
+                    <p>Acompanhe valores de serviços e peças para controle financeiro da oficina.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Política de Privacidade</h2>
+            <p>O aplicativo Power Sound é de uso exclusivo da empresa Power Sound e foi desenvolvido para gerenciamento interno das ordens de serviço e cadastros de peças e serviços.</p>
+            
+            <h3>Coleta e Uso de Dados</h3>
+            <ul>
+                <li><span>Dados armazenados: As informações de clientes, veículos, peças e serviços são armazenadas localmente no dispositivo e são de propriedade exclusiva da empresa Power Sound.</span></li>
+                <li><span>Dados não compartilhados: Nenhuma informação é compartilhada com terceiros ou enviada para servidores externos sem o conhecimento e autorização expressa da empresa.</span></li>
+                <li><span>Finalidade: Os dados são utilizados exclusivamente para facilitar o gerenciamento das atividades da oficina e melhorar o atendimento aos clientes.</span></li>
+                <li><span>Segurança: Todas as informações são tratadas com segurança e confidencialidade, sendo acessíveis apenas aos funcionários autorizados da Power Sound.</span></li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>Contato e Suporte</h2>
+            <p>Se você encontrar algum problema com o aplicativo ou precisar de assistência, entre em contato conosco pelos canais abaixo:</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>wellingtonluiz010203@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(14) 997-121314</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Piraju/SP - BRASIL</span>
+                </div>
+            </div>
+            
+            <h3>Horário de Atendimento</h3>
+            <p>O suporte está disponível de segunda a sexta-feira, das 8h às 18h.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Power Sound. Todos os direitos reservados.</p>
+            <p>Este aplicativo é de uso exclusivo e privado da empresa Power Sound.</p>
+        </div>
+    </footer>
+</body>
+</html> 
